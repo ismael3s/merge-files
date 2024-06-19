@@ -11,7 +11,7 @@ func executeCommand() *cobra.Command {
 		Short: "Merge all files inside of a folder into a single file",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
-			err := NewMer(args[0], outputFilenameFromCli).Execute()
+			err := NewMerger(args[0], outputFilenameFromCli).Execute()
 			if err != nil {
 				panic(err)
 			}

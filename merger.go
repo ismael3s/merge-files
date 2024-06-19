@@ -14,7 +14,7 @@ type Merger struct {
 	outputFilename string
 }
 
-func NewMer(dirLocation, outputFilename string) *Merger {
+func NewMerger(dirLocation, outputFilename string) *Merger {
 	return &Merger{dirLocation: dirLocation, outputFilename: outputFilename}
 }
 
